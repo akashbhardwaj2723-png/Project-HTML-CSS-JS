@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <style>
+   body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(ak.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+body:hover{
+  background-image: url(ak.jpg);
+  background-repeat:no-repeat ;
+  background-size:100% 100%;
+  
+}
+.main{
+    /* background-color: rgb(212, 189, 234); */
+    height: 550px;
+    width: 500px;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    box-shadow: 2px 2px 4px 4px darkorange;
+    
+}
+h1{
+  font-weight: 800;
+  font-size: 3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+  margin-bottom: 0;
+}
+h4{
+  margin-top:8px;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: Arial;
+  color: rgb(70, 13, 16);
+}
+.container{
+  height: 320px;
+  width: 250px;
+  /* background-color: rgb(203, 189, 216); */
+  box-shadow: 2px 2px 4px 4px rgb(237, 233, 226);
+  border-radius: 5px;
+
+  /* display: flex; */
+}
+input{
+  margin-top: 20px;
+  height: 35px;
+  width:85%;
+  border-radius: 5px;
+  border: none;
+}
+.btnFirst{
+  background-color: blue;
+  color: white;
+  margin-top: 10px;
+  height:40px ;
+  width: 85%;
+  border-radius: 5px;
+  border: none;
+  font-weight: 900;
+}
+h5{
+  color: blue;
+}
+span{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(236, 197, 21);
+}
+.secondbtn{
+  background-color: green;
+  color: white;
+  height: 40px;
+  width: 70%;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+}
+.main:hover{
+  background-image:url(main2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container:active{
+  background-image:url(container.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%
+}
+#footer{
+  color: rgb(235, 204, 29);
+}
+  </style>
+</head>
+<body>
+   <div class="main">
+       <h1>facebook</h1>
+       <h4>Facebook help to connect share with <br> the people in your life</h4>
+       <div class="container">
+          <input type="email"placeholder="Email address or phone num">
+          <input type="password"placeholder="Password">
+        
+          <br>
+          <button class="btnFirst">Log in</button>
+          <h5>forgetten password?</h5>
+          <hr><span>or</span><hr>
+
+          <button class="secondbtn">Create New Account</button>
+       </div>
+       <h5 id="footer"><Span>Create a Page </Span>for a Celibrity , Brand or Business</h5>
+   </div>
+  <script>
+    let container=document.querySelector(".container");
+    let input=document.querySelector("input")
+     input.addEventListener("click",function(){
+       container.style.backgroundImage="url('container.jpg')";2221
+     })
+  </script>
+</body>
+</html>
