@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculate</title>
+  <link rel="stylesheet" href="BMIStyle.css">
+</head>
+<body>
+   <div class="container">
+    <h1>BMI Calculator</h1>
+    <form action="kuch bhi">
+      <p><label for="height">Height in CM:<input type="text"id="height"placeholder="Enter your height"></label></p>
+        <p><label for="weight">Weight in KG:<input type="text"id="weight"placeholder="Enter your weight"></label></p>
+        <button>Calculator</button>
+        <div id="result"></div>
+        <div id="weight-guided">
+        <h3>BMI weight-guided</h3>
+        <h4 id="lessThan">under weight less than 18.66</h4>
+        <h4 id="normal">norma range 18.9</h4>
+        <h4 id="greatherThan">over weight Greather than 24.6</h4>
+        </div>
+    </form>
+   </div>
+   <script src="BMICal.js"></script>
+</body>
+</html>
